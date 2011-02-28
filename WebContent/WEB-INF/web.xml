@@ -22,9 +22,9 @@
    version="2.5"> 
 
     <description>
-      Mini Me
+      Banana
     </description>
-    <display-name>Mini Me</display-name>
+    <display-name>Banana</display-name>
 
     <!-- Define servlets that are included in the example application -->
 
@@ -35,7 +35,17 @@
 
 	<servlet-mapping>
 		<servlet-name>TestServlet</servlet-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddGameServlet</servlet-name>
+		<servlet-class>com.moozuck.AddGameServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddGameServlet</servlet-name>
+		<url-pattern>/addGame</url-pattern>
 	</servlet-mapping>
 	
 </web-app>
